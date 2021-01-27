@@ -5,6 +5,7 @@
      <body>
         <div style="border: 1px solid black;">
             <h2>신상정보</h2>
+            <form action="input.jsp" method="post">
             <ol>
                 <!-- https://server-engineer.tistory.com/635 -->
                 <li>이름 <input type="text" name="name" value="홍길동" onfocus="this.value='';this.style.color='black';" style="color:gray"></ul>
@@ -12,6 +13,8 @@
                 <li>전화번호<input type="tel" name="phone" value="01012345678"onfocus="this.value='';this.style.color='black';" style="color:gray"
                     required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="###-####-####"></ul>
             </ol>
+            <input type="submit" value="제출">
+        </form>
         </div>
      </body>
  </html>
