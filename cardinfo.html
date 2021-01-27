@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <meta http-eqliv="content-type" content="text/html;charset=utf-8">
+    <body>
+        <form name="cardinfo" action="getcardinfo.jsp" method="get">
+
+            <div style="border : 1px solid black">
+                <h2>카드정보 입력</h2>
+                <ol>
+                    <li>
+                        <div style="border : 1px solid black">
+                            <h2>카드 타입</h2>
+                        <ol>
+                                <li><input type="radio" name="card" id="visa" value="visa">비자카드</li>
+                                <li><input type="radio" name="card" id="AmEx" value="AmEx">AmEx</li>
+                                <li><input type="radio" name="card" id="Mastercard" value="Mastercard">마스터카드</li>
+                        </ol>
+                    </div>
+                    </li>
+                    <li>카드 번호<input type="text" name="cardnumber" placeholder="카드 번호"></li>
+                    <li>CRC 번호<input type="text" name="CRC_number" placeholder="앞 두자리만"></li>
+                    <li>카드 소유자 이름 <input type="text" name="cardowner" placeholder="카드 상의 이름"></li>
+                    <li>카드 만료 일자 <input type="date" name="cardexpired"></li>
+                    <li>카드 확인 숫자 <input type="number" min="0" max="100" step="1" value="0" name="cardconfirmnumber"></li>
+                </ol>
+            </div>
+
+            <div style="border : 1px solid black">
+                <br>
+                <input type="submit" value="제출">
+                <br>
+                <br>
+            </div>
+        </form>
+    </body>
+</html>

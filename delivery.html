@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <body>
+        <div>
+            <h2>배송지 주소</h2>
+            <form name="input" action="getdelivery.jsp" method="get">
+                <ol>
+                    <li>주소<textarea name="address" rows="3" cols="20"></textarea></ui>
+                    <li>우편번호<input type="text" name="mailaddress" required pattern="[0-9]{5}" title="#####"></ui>
+                    <li>국가<input type="text" name="country"></ui>
+                </ol>
+                <input type="submit" value="제출"/>
+                <input type="reset" value="초기화"/>
+            </form>
+        </div>
+    </body>
+</html>
